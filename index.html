@@ -1,50 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <!-- Meta informações sobre a página -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
+    </style>
 </head>
-<!-- HTML NÂO TEM PESCOÇO! -->
 
 <body>
-    <section>
-        <ul>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Formação acadêmica</a></li>
-            <li><a href="#">Hard skills</a></li>
-            <li><a href="#">Soft skills</a></li>
-            <li><a href="#">Meus projetos</a></li>
-            <li><a href="#">Meus artigos</a></li>
-            <li><a href="#">Última seção</a></li>
-        </ul>
-        <header>
 
-        </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#formacaoAcademica">Formação acadêmica</a></li>
+                <li><a href="#hardSkills">Hard skills</a></li>
+                <li><a href="#softSkills">Soft skills</a></li>
+                <li><a href="#meusProjetos">Meus projetos</a></li>
+                <li><a href="#meusArtigos">Meus artigos</a></li>
+                <li><a href="#rodape">Última seção</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </section>
-
-    <section>
-
+    <section id="sobreMim">
         <h1>Sobre mim</h1>
-        <p>Sou aluno do SESI e do SENAI São paulo.</p><img src="Pedro.jpg" alt="Foto de um Homem branco." width="200"
-            title="Foto de um Homem branco.">
-
+        <p>Sou aluno do SESI e do SENAI São Paulo.</p>
+        <img src="Pedro.jpg" alt="Foto de Pedro Cesar, homem branco." width="200" title="Pedro Cesar">
         <ul>
             <li>
-                <a href="https://github.com/PedroCesar553" title="Clique para acessar meu portfólio no GitHub"
-                    target="_blank">Acesse o meu GitHub</a>
+                <a href="https://github.com/PedroCesar553" target="_blank">Acesse o meu GitHub</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/pedro-cesar-401062358/"
-                    title="Clique para acessar meu portfólio no LinkedIn" target="_blank">Acesse o meu LinkedIn</a>
+                <a href="https://www.linkedin.com/in/pedro-cesar-401062358/" target="_blank">Acesse o meu LinkedIn</a>
             </li>
         </ul>
     </section>
 
-    <section>
+    <section id="formacaoAcademica">
         <h2>Formação acadêmica</h2>
         <ul>
             <li>Ensino Fundamental</li>
@@ -53,7 +47,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="hardSkills">
         <h2>Hard skills</h2>
         <ul>
             <li>JavaScript</li>
@@ -63,53 +57,50 @@
         </ul>
     </section>
 
-    <section>
+    <section id="softSkills">
         <h2>Soft skills</h2>
         <ul>
             <li>Inteligente</li>
             <li>Esforçado</li>
             <li>Gentil</li>
-            <li>Amigavel</li>
+            <li>Amigável</li>
         </ul>
     </section>
 
-    <section>
+    <section id="meusProjetos">
         <h2>Meus projetos</h2>
         <ul>
-            <li>
-                <a href="https://github.com/PedroCesar553/lopal-moonlander">MoonLander</a>
-            </li>
-            <li>
-                <a href="https://github.com/PedroCesar553/lopal-colecoes">lopal-colecoes</a>
-            </li>
-            <li>
-                <a href="https://github.com/PedroCesar553/pratica-git-e-github">Pratica-git-e-github</a>
-            </li>
-            <li>
-                <a href="https://github.com/PedroCesar553/lopal-estruturas-decisao">lopal-estruturas-decisao</a>
-            </li>
-            <li>
-                <a href="https://github.com/PedroCesar553/lopal-estruturas-repeticao">lopal-estruturas-repeticao</a>
-            </li>
+            <li><a href="https://github.com/PedroCesar553/lopal-moonlander">MoonLander</a></li>
+            <li><a href="https://github.com/PedroCesar553/lopal-colecoes">lopal-colecoes</a></li>
+            <li><a href="https://github.com/PedroCesar553/pratica-git-e-github">Pratica-git-e-github</a></li>
+            <li><a href="https://github.com/PedroCesar553/lopal-estruturas-decisao">lopal-estruturas-decisao</a></li>
+            <li><a href="https://github.com/PedroCesar553/lopal-estruturas-repeticao">lopal-estruturas-repeticao</a></li>
         </ul>
     </section>
 
-    <section>
+    <section id="meusArtigos">
         <h2>Meus artigos</h2>
+        <p>Em breve, artigos sobre tecnologia, programação e meus aprendizados.</p>
     </section>
 
-    <footer>
+    <section id="contato">
+        <h2>Entre em contato comigo</h2>
+        <form>
+            <input type="text" name="nome">
+            <input type="email" name="email">
+            <input type="color">
+            <textarea name="mensagem" rows="5" cols="50"></textarea>
+            <input type="submit" name="botaoEnviar">
+        </form>
+    </section>
+
+    <footer id="rodape">
         <p>Links úteis</p>
         <ul>
-            <li>
-                <a href="https://github.com/PedroCesar553" target="_blank">GitHub</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/pedro-cesar-401062358/" target="_blank">LinkedIn</a>
-            </li>
+            <li><a href="https://github.com/PedroCesar553" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/pedro-cesar-401062358/" target="_blank">LinkedIn</a></li>
         </ul>
-        <p>Copyright</p>
-        © Todos os direitos reservados, Pedro Cesar
+        <p>&copy; Todos os direitos reservados - Pedro Cesar</p>
     </footer>
 
 </body>
