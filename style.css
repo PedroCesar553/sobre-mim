@@ -58,6 +58,10 @@ section {
     color: rgb(255, 255, 255);
 }
 
+section a {
+    text-decoration: none;
+}
+
 p {
     margin-bottom: 1rem
 }
@@ -67,20 +71,42 @@ section form {
     color: black;
 }
 
-form input {
-    border: 2px solid white;
-    color: white;
-    background-color: white;
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
 }
 
-form textarea {
-    border: 2px solid rgb(255, 255, 255);
+/* Campos de texto */
+input, textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid black;
     background-color: white;
+    color: black;
 }
 
+/* Botão */
 form button {
- border: 2px solid white;
- background-color: white;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(0, 255, 13);
+    color: black;
+}
+
+/* Rótulos dos campos */
+form label {
+    color: white;
+    font-weight: bold;
 }
 
 footer {
@@ -89,7 +115,55 @@ footer {
     color: white;
 }
 
-footer ul {
-    display: table-footer-group;
+footer p {
+    text-align: center;
 }
 
+/* Estilo comum para os links */
+.icon {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: rgb(255, 255, 255);
+    /* Cor inicial do texto */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transição suave */
+}
+
+/* Cor dos ícones */
+.icon i {
+    color: rgb(255, 255, 255);
+    /* Cor inicial do ícone */
+    font-size: 24px;
+    /* Tamanho do ícone */
+    transition: color 0.3s ease;
+}
+
+/* Cores dos ícones ao passar o mouse */
+.icon.facebook:hover i {
+    color: #1877F2;
+    /* Cor do ícone do Facebook */
+}
+
+.icon.instagram:hover i {
+    color: #E4405F;
+    /* Cor do ícone do Instagram */
+}
+
+.icon.youtube:hover i {
+    color: #FF0000;
+    /* Cor do ícone do YouTube */
+}
+
+.icon.github:hover i {
+    color: #333333;
+    /* Cor do ícone do GitHub */
+}
+
+.icon.linkedin:hover i {
+    color: #0077B5;
+    /* Cor do ícone do LinkedIn */
+}
