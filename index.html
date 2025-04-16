@@ -55,7 +55,6 @@
             Hoje, estou me especializando na área de tecnologia, cursando Desenvolvimento de Sistemas (DS) no SENAI
             Ipiranga, em São Paulo. Tenho grande interesse pelo universo da programação e estou constantemente em busca
             de novos aprendizados e desafios que contribuam para o meu crescimento profissional e pessoal.
-
         </p>
 
         <img src="Pedro.jpg" alt="Foto de Pedro Cesar, homem branco." width="200" title="Pedro Cesar Homem branco.">
@@ -79,7 +78,7 @@
     </section>
 
     <section id="formacaoAcademica">
-        <h2>Formação acadêmica</h2>
+        <h2 class="titulo-secao">Formação acadêmica</h2>
         <p>Desde os 6 anos de idade, estudo na Escola SESI, onde iniciei no 1º ano do Ensino Fundamental. Concluí tanto
             o Ensino Fundamental I quanto o Ensino Fundamental II na mesma instituição e, atualmente, estou cursando o
             2º ano do Ensino Médio.
@@ -89,16 +88,51 @@
             JavaScript, com foco no desenvolvimento de sites e aplicações web. Pretendo expandir meus estudos para áreas
             como back-end, banco de dados e desenvolvimento mobile, buscando me tornar um desenvolvedor completo e
             versátil.</p>
+        <ul class="cards-em-linha">
+            <ul class="card">
+                <li class="titulo-card">Estudante de Desenvolvimento de Sistemas</li>
+                <li class="instituicao-card">SENAI"Conde José Vicente de Azevedo"</li>
+                <li class="ano-card">2026(previsto)</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Ensino Fundamental(Completo)</li>
+                <li class="instituicao-card">SESI Lausane</li>
+                <li class="ano-card">2023</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Completando o Ensino Médio</li>
+                <li class="instituicao-card">SESI Vila Leopoldina</li>
+                <li class="ano-card">2025</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Completando o Ensino Médio</li>
+                <li class="instituicao-card">SESI Catumbi(Belenzinho)</li>
+                <li class="ano-card">2026(previsto)</li>
+            </ul>
         </ul>
+
     </section>
 
     <section id="hardSkills">
-        <h2>Hard skills</h2>
-        <ul>
-            <li>Conehcimento em JavaScript</li>
-            <li>Conehcimento em HTML e CSS</li>
-            <li>Conehcimento em PowerShell</li>
+        <h2 class="titulo-secao">Hard skills</h2>
+        <ul class="cards-em-linha">
+            <ul class="card">
+                <li class="titulo-card">JavaScript</li>
+                <li class="curso-card">Conhecimento em JavaScript</li>
+            </ul>
 
+            <ul class="card">
+                <li class="titulo-card">HTML e CSS</li>
+                <li class="curso-card">Conhecimento em HTML e CSS</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">PowerShell</li>
+                <li class="curso-card">Conhecimento em PowerShell</li>
+            </ul>
         </ul>
     </section>
 
@@ -137,21 +171,21 @@
     <section id="contato">
         <h2>Entre em contato comigo</h2>
         <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-        
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" required>
+
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
-        
+
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="5" cols="50" required></textarea>
-        
+
             <button type="submit" name="botaoEnviar">Solicitar contato</button>
         </form>
     </section>
 
     <footer id="rodape">
-        <p>Links úteis</p>
+        <p id="links">Links úteis</p>
         <ul>
             <li>
                 <a href="https://facebook.com" target="_blank" class="icon facebook">
