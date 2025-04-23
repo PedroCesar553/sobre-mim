@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
     <!-- Meta informações sobre a página -->
@@ -43,38 +43,47 @@
                 <li><a href="#meusProjetos">Projetos</a></li>
                 <li><a href="#meusArtigos">Artigos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><span id="botao-tema">Tema</span></li>
+                <li><span id="botao-contraste">Contraste</span></li>
             </ul>
         </nav>
     </header>
 
     <section id="sobreMim">
         <h1>Sobre mim</h1>
-        <p>Olá! Me chamo Pedro Cesar, nasci em 08 de agosto de 2008 e atualmente tenho 16 anos. Em breve, completo 17.
-            Estudo no SESI desde os 6 anos de idade, onde iniciei minha jornada escolar no 1º ano do ensino fundamental.
 
-            Hoje, estou me especializando na área de tecnologia, cursando Desenvolvimento de Sistemas (DS) no SENAI
-            Ipiranga, em São Paulo. Tenho grande interesse pelo universo da programação e estou constantemente em busca
-            de novos aprendizados e desafios que contribuam para o meu crescimento profissional e pessoal.
-        </p>
+        <div class="sobre-container">
+            <img src="Pedro.jpg" alt="Foto de Pedro Cesar, homem branco." width="200" title="Pedro Cesar Homem branco.">
 
-        <img src="Pedro.jpg" alt="Foto de Pedro Cesar, homem branco." width="200" title="Pedro Cesar Homem branco.">
+            <div class="sobre-texto">
+                <p>
+                    Olá! Me chamo Pedro Cesar, nasci em 08 de agosto de 2008 e atualmente tenho 16 anos. Em breve,
+                    completo 17.
+                    Estudo no SESI desde os 6 anos de idade, onde iniciei minha jornada escolar no 1º ano do ensino
+                    fundamental.
+                    <br><br>
+                    Hoje, estou me especializando na área de tecnologia, cursando Desenvolvimento de Sistemas (DS) no
+                    SENAI
+                    Ipiranga, em São Paulo. Tenho grande interesse pelo universo da programação e estou constantemente
+                    em busca
+                    de novos aprendizados e desafios que contribuam para o meu crescimento profissional e pessoal.
+                </p>
 
-        <!-- section>(h2>{Nova seção})+p*2>lorem20 -->
-
-        <!-- header>nav.navbar>ul.lista>li*10>a>{link$} -->
-        <ul>
-            <li>
-                <a href="https://github.com/PedroCesar553" target="_blank" class="icon Github">
-                    <i class="fab fa-github"></i>Acesse o meu GitHub
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/pedro-cesar-401062358/" target="_blank" class="icon LinkedIn">
-                    <i class="fab fa-linkedin"></i>Acesse o meu LinkedIn
-                </a>
-            </li>
-        </ul>
-
+                <ul>
+                    <li>
+                        <a href="https://github.com/PedroCesar553" target="_blank" class="icon Github">
+                            <i class="fab fa-github"></i> Acesse o meu GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/pedro-cesar-401062358/" target="_blank"
+                            class="icon LinkedIn">
+                            <i class="fab fa-linkedin"></i> Acesse o meu LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="formacaoAcademica">
@@ -137,39 +146,82 @@
     </section>
 
     <section id="softSkills">
-        <h2>Soft skills</h2>
-        <ul>
-            <li>Esforçado</li>
-            <li>Lido bem com pessoas</li>
-            <li>Gosto de aprender coisas novas</li>
-            <li>Paciente</li>
-
-        </ul>
+        <h2 class="titulo-secao">Soft skills</h2>
+        <div class="cards-em-linha">
+            <ul class="card">
+                <li class="icone-card">🤝</li>
+                <li class="titulo-card">Trabalho em equipe</li>
+            </ul>
+            <ul class="card">
+                <li class="icone-card">🧠</li>
+                <li class="titulo-card">Pensamento Critíco</li>
+            </ul>
+            <ul class="card">
+                <li class="icone-card">🤔</li>
+                <li class="titulo-card">Resolução de problemas</li>
+            </ul>
+            <ul class="card">
+                <li class="icone-card">🐙</li>
+                <li class="titulo-card">Adaptabilidade</li>
+            </ul>
+            <ul class="card">
+                <li class="icone-card">📚</li>
+                <li class="titulo-card">Aprendizado Contínuo</li>
+            </ul>
+            <ul class="card">
+                <li class="icone-card">⏱️</li>
+                <li class="titulo-card">Autogestão</li>
+            </ul>
+        </div>
     </section>
 
     <section id="meusProjetos">
-        <h2>Meus projetos</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/PedroCesar553/sobre-mim" target="_blank">Sobre mim</a>
-            </li>
-            <li>
-                <a href="https://github.com/PedroCesar553/lopal-moonlander">MoonLander</a>
-            </li>
-            <p>Mais projetos em breve</p>
-        </ul>
+        <h2 class="titulo-secao">Meus projetos</h2>
+        <div class="cards-em-linha">
+
+            <ul class="card">
+                <li class="titulo-card">
+                    <a href="https://github.com/PedroCesar553/sobre-mim" target="_blank">Sobre mim</a>
+                </li>
+            </ul>
+            <ul class="card">
+                <li class="titulo-card">
+                    <a href="https://github.com/PedroCesar553/lopal-moonlander">MoonLander</a>
+                </li>
+            </ul>
+        </div>
+        <p>Mais projetos em breve</p>
+
+        </div>
     </section>
 
     <section id="meusArtigos">
-        <h2>Meus artigos</h2>
-        <ul>
-            Em breve artigos de tecnologia e programação
-        </ul>
+
+        <h2 class="titulo-secao">Meus artigos</h2>
+        <div class="artigos cards-em-linhas"></div>
+
+        <article class="card">
+            <header>
+              <h3 class="card-titulo">Portfólio profissional usando GitHub Pages</h3>
+              <span class="data-publicacao">15 abr 2025</span>
+              <span class="autor">Pedro Cesar</span>
+            </header>
+            <p>Crie e publique seu portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades.</p>
+            <footer>
+              <p>
+                <button type="button" class="botao botao-continue" aria-label="Continue lendo o artigo sobre portfólio profissional">Continue lendo</button>
+              </p>
+              <p>
+                <button type="button" class="botao botao-compartilhar" aria-label="Compartilhar este artigo">Compartilhar</button>
+              </p>
+            </footer>
+          </article>
 
     </section>
 
     <section id="contato">
         <h2>Entre em contato comigo</h2>
+        <br>
         <form>
             <label for="nome">Nome: </label>
             <input type="text" name="nome" required>
@@ -182,6 +234,11 @@
 
             <button type="submit" name="botaoEnviar">Solicitar contato</button>
         </form>
+        <p>Ou, se preferir:</p>
+        <a href="https://wa.me/5511970631419" target="_blank" title="Clique aqui para falar comigo no WhatsApp"></a>
+        <button
+            style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">💬
+            Fale comigo no WhatsApp</button>
     </section>
 
     <footer id="rodape">
@@ -219,6 +276,31 @@
         <p>&copy; Todos os direitos reservados - Pedro Cesar</p>
     </footer>
 
+    <script>
+        document.querySelector('#botao-tema').addEventListener('click', trocaTema);
+
+        function trocaTema() {
+            const root = document.documentElement;
+
+            if (root.getAttribute('data-theme') === 'dark') {
+                root.removeAttribute('data-theme');
+            } else {
+                root.setAttribute('data-theme', 'dark');
+            }
+        }
+
+        document.querySelector('#botao-contraste').addEventListener('click', trocaTemaContraste)
+
+        function trocaTemaContraste() {
+            const root = document.documentElement;
+
+            if (root.getAttribute('data-theme') === 'alto-contraste') {
+                root.removeAttribute('data-theme');
+            } else {
+                root.setAttribute('data-theme', 'alto-contraste');
+            }
+        }
+    </script>
 </body>
 
 </html>
