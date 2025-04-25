@@ -5,12 +5,14 @@
     --cor-texto: #1a1a1a;
     --cor-section: #ffffff;
     --borda-cartao: none;
-    --cor-icon: #0066cc;
+    --cor-icon: #000000;
     --cor-fundoSection: #ffffff;
     --cor-cabecalho: #003366;
     --cor-hover: #e6f0ff;
     --cor-titulo-card: #003366;
     --cor-texto-secundario: #555555;
+    --cor-instituicao-card: #ff0000;
+    
 }
 
 [data-theme="dark"] {
@@ -26,6 +28,7 @@
     --cor-hover: #2a2a40;
     --cor-titulo-card: #80b3ff;
     --cor-texto-secundario: #cccccc;
+    --cor-instituicao-card: #ff0000;
 }
 
 [data-theme="alto-contraste"] {
@@ -41,6 +44,7 @@
     --cor-hover: #ff0;
     --cor-titulo-card: #000000;
     --cor-texto-secundario: #ffffff;
+    --cor-instituicao-card: #ff0000;
 }
 
 body {
@@ -240,7 +244,7 @@ footer p {
 
 .instituicao-card {
     font-size: 1.1rem;
-    color: var(--cor-texto-secundario);
+    color: var(--cor-instituicao-card);
     text-align: center;
 }
 
@@ -336,6 +340,7 @@ footer p {
 #formacaoAcademica h2,
 #hardSkills h2 {
     text-align: center;
+    
 }
 
 #contato {
@@ -352,7 +357,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding: 2rem;
     background-color: var(--cor-primaria);
